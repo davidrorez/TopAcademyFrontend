@@ -10,7 +10,7 @@
     box-shadow: 0px 14px 20px 0px rgba(0, 0, 0, 0.08);
 }
 .card > .icon-container {
-    background-color: #96BB7C;
+    background-color: #2d5bfd;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@
 .card > .line {
     width: 50px;
     height: 2px;
-    background-color: #96BB7C;
+    background-color: #2d5bfd;  
 }
 .card > h3 {
     color: #252b42;

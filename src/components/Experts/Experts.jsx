@@ -2,6 +2,9 @@ import React from "react";
 import SectionHeader from "../Section-Header/SectionHeader";
 import Product from "../Product/Product";
 import "./Experts.css"
+import ProductThumbnails1 from "../../assets/product-thumbnails.jpg";     
+import ProductThumbnails2 from "../../assets/product-thumbnails-2.jpg";
+import ProductThumbnails3 from "../../assets/product-thumbnails-2.jpg";
 
 export default function Experts() {
     return (
@@ -13,7 +16,7 @@ export default function Experts() {
             />
             <div className="products-container">
                 <Product
-                    thumbnails={"product-thumbnails.jpg"}
+                    thumbnails={ProductThumbnails1}
                     category={"Training Courses"}
                     title={"Get Quality Education"}
                     description={"We focus on ergonomics and meeting you where you work. It's only a keystroke away."}
@@ -25,7 +28,7 @@ export default function Experts() {
 
                 />
                 <Product
-                    thumbnails={"product-thumbnails-2.jpg"}
+                    thumbnails={ProductThumbnails2}
                     category={"2,769 online courses	"}
                     title={"Our Popular Courses"}
                     description={"We focus on ergonomics and meeting you where you work. It's only a keystroke away."}
@@ -37,7 +40,7 @@ export default function Experts() {
 
                 />
                 <Product
-                    thumbnails={"product-thumbnails-3.jpg"}
+                    thumbnails={ProductThumbnails3}
                     category={"Expert instruction"}
                     title={"Most Popular Courses"}
                     description={"We focus on ergonomics and meeting you where you work. It's only a keystroke away."}

@@ -6,14 +6,9 @@ import "./Copyright.css"
 export default function Copyright(){
     return(
         <footer className="copyright">
-            <div className="innertext">
-                Code with <AiFillHeart className="icon" /> By <a href="https://mahdi-hazrati.github.io/">Mahdi Hazrati</a>
-                and <CgFigma className="icon" /> UI Made By <a href="https://www.captain-design.com/">Captain Design</a>.
+            <div>
+                © {new Date().getFullYear()} TopAcademy. Todos los derechos reservados.
             </div>
-            <a href="https://github.com/Mahdi-Hazrati/Academy-Landing-Page" className="github-icon">
-                <AiFillGithub className="icon" />
-                Source Code On Github
-            </a>
         </footer>
     )
 }

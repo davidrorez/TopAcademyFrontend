@@ -39,7 +39,7 @@
 }
 /* Main  H4  sub Title */
 .top > .left > h5 {
-    color: #96BB7C;
+    color: #2d5bfd;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -62,7 +62,7 @@
 
 }
 .top > .left > .btn-container > .button-filled{
-    background-color: #96BB7C;
+    background-color: #2d5bfd;
     color: white;
     padding: 15px 30px;
     border-radius: 10px;
@@ -76,8 +76,8 @@
     
 }
 .top > .left > .btn-container > .button-outline{
-    border:1px solid #96BB7C;
-    color: #96BB7C;
+    border:1px solid #2d5bfd;
+    color: #2d5bfd;
     padding: 15px 30px;
     border-radius: 10px;
     cursor: pointer;
@@ -99,7 +99,6 @@
     
 }
 .top > .right > .main-image-container {
-    background-image: url("http://localhost:3000/Rectangle.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

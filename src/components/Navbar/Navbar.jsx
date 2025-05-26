@@ -1,12 +1,13 @@
 import {BiRightArrowAlt} from "react-icons/bi"
 import "./Navbar.css"
+import logo from "../../assets/academy-logo.png"
 
 export default function Navbar() {
     return (
         <div className="navbar">
             <div className="nav-logo">
-                <img className="logo" src="academy-logo.png" alt="DigitalSkills Institute" />
-                <span className="title">DigitalSkills Institute</span>
+                <img className="logo" src={logo} alt="Top Academy" />
+                <span className="title">Top Academy</span>
             </div>
             <ul className="nav-menu">
                 <li className="nav-menu-item">Home</li>
@@ -15,9 +16,8 @@ export default function Navbar() {
                 <li className="nav-menu-item">Contact</li>
             </ul>
             <div className="nav-login">
-                <span className="log-in">Login</span>
                 <div className="join-us">
-                    <span>Join US</span>
+                    <span>Matrícular</span>
                     <BiRightArrowAlt className="icon" />
                 </div>
             </div>

@@ -1,23 +1,23 @@
 import Card from "./Card"
 import {FaGraduationCap, FaFireAlt} from "react-icons/fa"
 import "./Header.css"
+import placeHolderImg from "../../assets/Placeholder.png"
 
 export default function Header() {
     return (
         <div className="header">
             <div className="top">
                 <div className="left">
-                    <h5>Join Us</h5>
-                    <h1>25K+ STUDENTS<br />TRUST US</h1>
-                    <h4>Every day brings with it a fresh set of learning possibilities.</h4>
+                    <h1>1000+ Estudiantes<br />CONFÍAN EN NOSOTROS.</h1>
+                    <h4>Primaria, tercer ciclo, bachillerato y más.</h4>
                     <div className="btn-container">
-                    <div className="button-filled">Get Quote Now</div>
-                    <div className="button-outline">Learn More</div>
+                    <div className="button-filled">Empezar Ahora</div>
+                    <div className="button-outline">Más información</div>
                     </div>
                 </div>
                 <div className="right">
                     <div className="main-image-container">
-                        <img src="Placeholder.png" alt="intro placholder"/>
+                        <img src={placeHolderImg} alt="intro placholder"/>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,9 @@ import React from "react";
 import SectionHeader from "../Section-Header/SectionHeader";
 import Comment from "../Comment/Comment";
 import "./Review.css"
+import Avatar1 from "../../assets/Avatar.jpg"
+import Avatar2 from "../../assets/Avatar.jpg"
+import Avatar3 from "../../assets/Avatar.jpg"
 
 export default function Review() {
     return (
@@ -13,9 +16,9 @@ export default function Review() {
 
             />
             <div className="review-container">
-                <Comment username={"Regina Miles"} title={"Designer"} profile_src={"Avatar.jpg"} />
-                <Comment username={"Regina Miles"} title={"Designer"} profile_src={"Avatar.jpg"} />
-                <Comment username={"Regina Miles"} title={"Designer"} profile_src={"Avatar.jpg"} />
+                <Comment username={"Regina Miles"} title={"Designer"} profile_src={Avatar1} />
+                <Comment username={"Regina Miles"} title={"Designer"} profile_src={Avatar2}  />
+                <Comment username={"Regina Miles"} title={"Designer"} profile_src={Avatar3}  />
             </div>
         </div>
     )

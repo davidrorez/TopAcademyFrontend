@@ -39,33 +39,32 @@
     cursor: pointer;
 }
 .matters > .left > .learn-more:hover{
-    border-bottom-color: #96BB7C;
+    border-bottom-color: #2d5bfd
 
 }
 .matters > .left > .learn-more > h6{
     font-size: 14px;
-    color: #96BB7C;
+    color: #2d5bfd;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 1px;
 
 }
 .matters > .left > .learn-more > .icon{
-    color: #96BB7C;
+    color: #2d5bfd;
     width: 14px;
     height: 14px;
 }
 .matters > .left > .line{
     width: 95px;
     height: 5px;
-    background-color: #96BB7C;
+    background-color: #2d5bfd;
 }
 /* Right Side */
 .matters > .right{
     width: 504px;
     /* height: 400px; */
     background-repeat: no-repeat;
-    background-image: url("../../../public/Rectangle-bg.png");
     position: relative;
     background-size: 340px;
     background-position: bottom;
@@ -116,5 +115,4 @@
     left: 40px;
 
 }
-/* ------------------------------------------ */
 
