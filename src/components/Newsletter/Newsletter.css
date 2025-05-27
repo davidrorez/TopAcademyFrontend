@@ -15,7 +15,7 @@
     text-align: center;
 }
 .newsletter > .section-title > .subtitle{
-    color: #96BB7C;
+    color: #2d5bfd;
     font-size: 14px;
     list-style: 28px;
     font-weight: 700;
@@ -64,7 +64,7 @@
 .newsletter > .email-box > #subscribe-button{
     width: 120px;
     height: 100%;
-    background-color: #96BB7C;
+    background-color: #2d5bfd;
     color: #ffffff;
     border: none;
     outline: none;
@@ -78,6 +78,6 @@
     
 }
 .newsletter > .email-box > #subscribe-button:hover{
-    background-color: #83a36c;
+    background-color: #2d5bfd;
     cursor: pointer;
 }

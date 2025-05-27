@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "../Section-Header/SectionHeader";
 import Product from "../Product/Product";
-import "./Experts.css"
+import "./Experts.css";
 import ProductThumbnails1 from "../../assets/product-thumbnails.jpg";     
 import ProductThumbnails2 from "../../assets/product-thumbnails-2.jpg";
 import ProductThumbnails3 from "../../assets/product-thumbnails-2.jpg";
@@ -10,49 +10,45 @@ export default function Experts() {
     return (
         <div className="experts">
             <SectionHeader
-                subtitle="Practice Advice"
-                title="Our Experts Teacher"
-                paragraph="Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics"
+                subtitle="Nuestros Cursos"
+                title="Formación Académica de Calidad"
+                paragraph="Explora nuestros programas educativos diseñados para ayudarte a alcanzar el éxito académico desde la primaria hasta el bachillerato."
             />
             <div className="products-container">
                 <Product
                     thumbnails={ProductThumbnails1}
-                    category={"Training Courses"}
-                    title={"Get Quality Education"}
-                    description={"We focus on ergonomics and meeting you where you work. It's only a keystroke away."}
-                    price={"16.48"}
-                    disscount={"6.48"}
-                    saleCount={"15"}
-                    badge={"80%"}
-                    stars={"4.7"}
-
+                    category={"Primaria"}
+                    title={"Programa de Educación Primaria"}
+                    description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
+                    price={"₡15,000"}
+                    disscount={"₡12,000"}
+                    saleCount={"120"}
+                    badge={"20%"}
+                    stars={"4.8"}
                 />
                 <Product
                     thumbnails={ProductThumbnails2}
-                    category={"2,769 online courses	"}
-                    title={"Our Popular Courses"}
-                    description={"We focus on ergonomics and meeting you where you work. It's only a keystroke away."}
-                    price={"24.48"}
-                    disscount={"12.99"}
-                    saleCount={"35"}
-                    badge={"50%"}
+                    category={"Tercer Ciclo"}
+                    title={"Preparación Académica para Tercer Ciclo"}
+                    description={"Refuerza tus conocimientos y prepárate para el bachillerato con confianza."}
+                    price={"₡20,000"}
+                    disscount={"₡16,000"}
+                    saleCount={"85"}
+                    badge={"20%"}
                     stars={"4.9"}
-
                 />
                 <Product
                     thumbnails={ProductThumbnails3}
-                    category={"Expert instruction"}
-                    title={"Most Popular Courses"}
-                    description={"We focus on ergonomics and meeting you where you work. It's only a keystroke away."}
-                    price={"89.99"}
-                    disscount={"49.99"}
-                    saleCount={"32"}
-                    badge={"45%"}
-                    stars={"4.8"}
-
+                    category={"Bachillerato"}
+                    title={"Curso Intensivo para Bachillerato"}
+                    description={"Obtén la preparación necesaria para superar tus exámenes con éxito."}
+                    price={"₡25,000"}
+                    disscount={"₡18,750"}
+                    saleCount={"140"}
+                    badge={"25%"}
+                    stars={"5.0"}
                 />
             </div>
-
         </div>
-    )
+    );
 }

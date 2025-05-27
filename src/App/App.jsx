@@ -34,8 +34,9 @@ export default function App() {
             <Experts />
             {/* Section 3 */}
             <Review />
-            {/* Section 4 */}
+            {/* Section 4 
             <Courses />
+            */}
             {/* Section 5 */}
             <Newsletter />
             {/* Footer Section*/}

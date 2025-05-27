@@ -10,10 +10,10 @@ export default function Navbar() {
                 <span className="title">Top Academy</span>
             </div>
             <ul className="nav-menu">
-                <li className="nav-menu-item">Home</li>
-                <li className="nav-menu-item">Product</li>
-                <li className="nav-menu-item">Pricing</li>
-                <li className="nav-menu-item">Contact</li>
+                <li className="nav-menu-item">Inicio</li>
+                <li className="nav-menu-item">Cursos</li>
+                <li className="nav-menu-item">Nosotros</li>
+                <li className="nav-menu-item">Contacto</li>
             </ul>
             <div className="nav-login">
                 <div className="join-us">
