@@ -37,8 +37,9 @@ export default function App() {
             {/* Section 4 
             <Courses />
             */}
-            {/* Section 5 */}
+            {/* Section 5 
             <Newsletter />
+            */}
             {/* Footer Section*/}
             <Footer />
             {/* Copyright Section*/}

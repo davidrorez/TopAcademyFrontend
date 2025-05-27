@@ -1,26 +1,92 @@
-import {BiRightArrowAlt} from "react-icons/bi"
-import "./Navbar.css"
-import logo from "../../assets/academy-logo.png"
+import React from "react";
+import { BiRightArrowAlt } from "react-icons/bi";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import logo from "../../assets/academy-logo1.PNG";
 
 export default function Navbar() {
-    return (
-        <div className="navbar">
-            <div className="nav-logo">
-                <img className="logo" src={logo} alt="Top Academy" />
-                <span className="title">Top Academy</span>
-            </div>
-            <ul className="nav-menu">
-                <li className="nav-menu-item">Inicio</li>
-                <li className="nav-menu-item">Cursos</li>
-                <li className="nav-menu-item">Nosotros</li>
-                <li className="nav-menu-item">Contacto</li>
-            </ul>
-            <div className="nav-login">
-                <div className="join-us">
-                    <span>Matrícular</span>
-                    <BiRightArrowAlt className="icon" />
-                </div>
-            </div>
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div className="container-fluid">
+        {/* Logo + Title */}
+        <a href="#" className="navbar-brand d-flex align-items-center gap-2">
+          <img
+            src={logo}
+            alt="Top Academy"
+            style={{ width: "70px", height: "auto", userSelect: "none" }}
+            draggable={false}
+          />
+          <span
+            style={{
+              color: "#252b42",
+              fontWeight: "700",
+              fontSize: "24px",
+              letterSpacing: "0.1px",
+            }}
+          >
+            Top Academy
+          </span>
+        </a>
+
+        {/* Botón hamburguesa */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+
+        {/* Menú colapsable */}
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-5">
+            <li className="nav-item">
+              <a
+                className="nav-link text-secondary fw-semibold"
+                href="#"
+              >
+                Inicio
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-secondary fw-semibold"
+                href="#"
+              >
+                Cursos
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-secondary fw-semibold"
+                href="#"
+              >
+                Nosotros
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-secondary fw-semibold"
+                href="#"
+              >
+                Contacto
+              </a>
+            </li>
+          </ul>
+
+          {/* Botón Matrícular */}
+          <button
+            type="button"
+            className="btn btn-primary d-flex align-items-center gap-2 px-4 py-2 text-uppercase fw-medium"
+          >
+            Matrícular <BiRightArrowAlt size={20} />
+          </button>
         </div>
-    )
+      </div>
+    </nav>
+  );
 }
