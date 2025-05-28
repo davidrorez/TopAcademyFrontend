@@ -4,6 +4,9 @@ import kid from '../../assets/kid.png';
 import rectangleBg from '../../assets/t.svg';
 
 export default function Matters() {
+
+    const linkYoutubeVideo = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+
     return (
         <div
             className="container-fluid py-5"
@@ -37,7 +40,15 @@ export default function Matters() {
 
                 {/* Right Section */}
                 <div className="col-lg-5 col-md-6 position-relative d-flex justify-content-center">
-                    <img src={kid} alt="Niño estudiando" className="img-fluid" style={{ maxWidth: '280px' }} />
+                    <div className="ratio ratio-16x9" style={{ width: '100%', maxWidth: '420px' }}>
+                        <iframe
+                            src={linkYoutubeVideo}
+                            title="Video promocional"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{ borderRadius: '12px', width: '100%', height: '100%' }}
+                        ></iframe>
+                    </div>
                 </div>
             </div>
         </div>

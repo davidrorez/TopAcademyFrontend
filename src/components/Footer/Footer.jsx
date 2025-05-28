@@ -1,48 +1,73 @@
 import React from "react";
-import Title from "./Title";
-import Subtitle from "./Subtitle"
-import TitleWithIcon from "./TitleWithIcon"
-import {AiOutlinePhone,AiOutlineMail } from "react-icons/ai"
-import {BiMap } from "react-icons/bi"
-import "./Footer.css"
+import { AiOutlinePhone, AiOutlineFacebook, AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+import { BiMap } from "react-icons/bi";
+import "./Footer.css";
 
-export default function footer(){
-    return(
-        <div className="footer">
-            <div className="section sec-1">
-                <Title innerText={"Company Info"} />
-                <Subtitle innerText={"About Us"} href={"#"} />
-                <Subtitle innerText={"Carrier"} href={"#"} />
-                <Subtitle innerText={"We are hiring"} href={"#"} />
-                <Subtitle innerText={"Blog"} href={"#"} />
-            </div>
-            <div className="section sec-2">
-                <Title innerText={"Legal"} />
-                <Subtitle innerText={"About Us"} href={"#"} />
-                <Subtitle innerText={"Carrier"} href={"#"} />
-                <Subtitle innerText={"We are hiring"} href={"#"} />
-                <Subtitle innerText={"Blog"} href={"#"} />
-            </div>
-            <div className="section sec-3">
-                <Title innerText={"Features"} />
-                <Subtitle innerText={"Business Marketing"} href={"#"} />
-                <Subtitle innerText={"User Analytic"} href={"#"} />
-                <Subtitle innerText={"Live Chat"} href={"#"} />
-                <Subtitle innerText={"Unlimited Support"} href={"#"} />
-            </div>
-            <div className="section sec-4">
-                <Title innerText={"Resources"} />
-                <Subtitle innerText={"IOS & Android"} href={"#"} />
-                <Subtitle innerText={"Watch a Demo"} href={"#"} />
-                <Subtitle innerText={"Customers"} href={"#"} />
-                <Subtitle innerText={"API"} href={"#"} />
-            </div>
-            <div className="section sec-5">
-                <Title innerText={"Get In Touch"} />
-                <TitleWithIcon innerText={"(480) 555-0103"} Icon={<AiOutlinePhone />} />
-                <TitleWithIcon innerText={"Washington Ave"} Icon={<BiMap />} />
-                <TitleWithIcon innerText={"debra.holt@example.com"} Icon={<AiOutlineMail />} />
-            </div>
+export default function Footer() {
+  return (
+    <footer className="page-footer font-small blue pt-4" style={{ backgroundColor: "#2d5bfd" }}>
+      <div className="container-fluid text-center text-md-left text-white">
+        <div className="row">
+          {/* Sección info */}
+          <div className="col-md-6 mt-md-0 mt-3">
+            <h5 className="text-uppercase">Top Academy Costa Rica</h5>
+            <p>
+              Instituto educativo dedicado a formación académica y técnica, con cursos de inglés, portugués, administración y más. 
+              Modalidad presencial y virtual, desde primaria hasta bachillerato.
+            </p>
+          </div>
+
+          <hr className="clearfix w-100 d-md-none pb-0" />
+
+          {/* Sección Contacto */}
+          <div className="col-md-3 mb-md-0 mb-3">
+            <h5 className="text-uppercase">Contacto</h5>
+            <ul className="list-unstyled">
+              <li>
+                <BiMap style={{ marginRight: 8 }} />
+                175 oeste de la biblioteca pública, Alajuela centro, Alajuela, Costa Rica
+              </li>
+              <li>
+                <AiOutlinePhone style={{ marginRight: 8 }} />
+                <a href="tel:+50687884669" className="text-white">8788 4669</a>
+              </li>
+              <li>
+                <AiOutlineMail style={{ marginRight: 8 }} />
+                <a href="mailto:topacademycr@gmail.com" className="text-white">topacademycr@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Sección Redes Sociales */}
+          <div className="col-md-3 mb-md-0 mb-3">
+            <h5 className="text-uppercase">Redes Sociales</h5>
+            <ul className="list-unstyled">
+              <li>
+                <AiOutlineFacebook style={{ marginRight: 8 }} />
+                <a
+                  href="https://www.facebook.com/Topacademycr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  facebook.com/Topacademycr
+                </a>
+              </li>
+              <li>
+                <AiOutlineInstagram style={{ marginRight: 8 }} />
+                <a
+                  href="https://www.instagram.com/topacademycr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  instagram.com/topacademycr
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    )
+      </div>
+    </footer>
+  );
 }

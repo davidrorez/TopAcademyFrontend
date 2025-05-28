@@ -1,61 +1,55 @@
 import React from "react";
 import {
-    AiOutlineHeart,
-    AiOutlineEye,
-    AiOutlineShoppingCart,
-    AiFillStar,
-    AiOutlineDownload,
-    AiOutlineArrowRight,
-} from "react-icons/ai"
+  AiFillStar,
+  AiOutlineArrowRight,
+} from "react-icons/ai";
 
-import "./Product.css"
+import "./Product.css";
 
-export default function Product({thumbnails, category, title, description, saleCount,price, disscount, stars, badge }) {
-    return (
-        <div className="product">
-            <div className="top">
-                <div className="thumbnails">
-                    <img src={thumbnails} alt={title + " product thumbnails"} />
-                </div>
-                <div className="actions">
-                    <div className="top-badge">{badge}</div>
-                    <div className="action-button">
-                        <div className="like">
-                            <AiOutlineHeart />
-                        </div>
-                        <div className="basket">
-                            <AiOutlineShoppingCart />
-                        </div>
-                        <div className="watch">
-                            <AiOutlineEye />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="bottom">
-                <div className="category">
-                    <a href={"/" + category} className="product-category">{category}</a>
-                    <div className="rate">
-                        <AiFillStar className="star-icon" />
-                        <span className="digit">{stars}</span>
-                    </div>
-                </div>
-                <h5 className="product-title">{title}</h5>
-                <p className="product-description">{description}</p>
-                <div className="sale">
-                    <AiOutlineDownload className="download-icon" />
-                    <h6 className="sale-count">{saleCount} Sales</h6>
-                </div>
-                <div className="price">
-                    <h5 className="main">${price}</h5>
-                    <h5 className="disscount">${disscount}</h5>
-                </div>
-
-                <button className="learn-more">
-                    <span>Learn More</span>
-                    <AiOutlineArrowRight className="arrow-right-icon" />
-                </button>
-            </div>
+export default function Product({
+  thumbnails,
+  category,
+  title,
+  description,
+  price,
+  disscount,
+  stars,
+  badge,
+}) {
+  return (
+    <div className="card product shadow-sm rounded-4 overflow-hidden">
+      <div className="position-relative top-section">
+        <img
+          src={thumbnails}
+          alt={`${title} product thumbnail`}
+          className="card-img-top object-fit-cover"
+          style={{ height: "300px", width: "100%" }}
+        />
+        <div className="position-absolute top-0 start-0 m-2 px-2 py-1 bg-danger text-white rounded">
+          {badge}
         </div>
-    )
+      </div>
+
+      <div className="card-body d-flex flex-column justify-content-between" style={{ height: "300px" }}>
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <a href={`/${category}`} className="text-primary fw-bold text-decoration-none">
+            {category}
+          </a>
+          <div className="bg-dark text-white px-2 py-1 rounded d-flex align-items-center gap-1">
+            <AiFillStar className="text-warning" />
+            <span className="small">{stars}</span>
+          </div>
+        </div>
+        <h5 className="card-title fw-bold">{title}</h5>
+        <p className="card-text text-muted small">{description}</p>
+        <div className="d-flex gap-2 align-items-center mb-3">
+          <span className="text-muted text-decoration-line-through fw-bold">${price}</span>
+          <span className="text-danger fw-bold">${disscount}</span>
+        </div>
+        <button className="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2">
+          Learn More <AiOutlineArrowRight />
+        </button>
+      </div>
+    </div>
+  );
 }

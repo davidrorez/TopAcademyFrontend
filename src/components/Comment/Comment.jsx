@@ -1,36 +1,33 @@
-import React from "react"
+import React, {useEffect} from "react"
 import {AiFillStar} from "react-icons/ai"
 import "./Comment.css"
 
-export default function Comment({username, title, profile_src}) {
-    return (
-        <div className="comment">
-            <div className="content">
-                <div className="stars">
-                    <AiFillStar className="star-fill-icon" />
-                    <AiFillStar className="star-fill-icon" />
-                    <AiFillStar className="star-fill-icon" />
-                    <AiFillStar className="star-fill-icon" />
-                    <AiFillStar className="star-fill-icon" />
-                </div>
-                <p className="paragraph">
-                    Slate helps you see
-                    how many more days
-                    you need to work to
-                    reach your financial
-                    goal for the month
-                    and year.
-                </p>
-            </div>
-            <div className="avatar">
-                <div className="profile-photo">
-                    <img src={profile_src} alt={username + " 's profile"} />
-                </div>
-                <div className="user-info">
-                    <h4 className="username">{username}</h4>
-                    <h6 className="usertitle">{title}</h6>
-                </div>
-            </div>
-        </div>
-    )
+export default function Comments({ url }) {
+  useEffect(() => {
+    if (window.FB) {
+      window.FB.XFBML.parse();
+    } else {
+      (function (d, s, id) {
+        let js;
+        const fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v17.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'facebook-jssdk');
+    }
+  }, []);
+
+  return (
+    <>
+      <div id="fb-root"></div>
+      <div
+        className="fb-comments"
+        data-href={url}
+        data-width="100%"
+        data-numposts="5"
+        data-order-by="reverse_time"
+      ></div>
+    </>
+  );
 }

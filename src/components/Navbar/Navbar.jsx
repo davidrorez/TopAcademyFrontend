@@ -5,6 +5,16 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import logo from "../../assets/academy-logo1.PNG";
 
 export default function Navbar() {
+
+  const handleMatricularClick = () => {
+    const whatsappNumber = "50687884669"; 
+    const message = "¡Hola! Estoy muy interesado/a en matricularme en Top Academy. Me gustaría recibir más información sobre los cursos disponibles, los horarios y el proceso de inscripción. Muchas gracias.";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
       <div className="container-fluid">
@@ -81,6 +91,7 @@ export default function Navbar() {
           {/* Botón Matrícular */}
           <button
             type="button"
+            onClick={handleMatricularClick}
             className="btn btn-primary d-flex align-items-center gap-2 px-4 py-2 text-uppercase fw-medium"
           >
             Matrícular <BiRightArrowAlt size={20} />
