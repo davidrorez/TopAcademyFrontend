@@ -5,6 +5,9 @@ import rectangleBg from '../../assets/t.svg';
 
 export default function Matters() {
 
+    const goToYoutubeChannel = () => {
+        window.open("https://www.youtube.com/", "_blank")
+    };
     const linkYoutubeVideo = "https://www.youtube.com/embed/dQw4w9WgXcQ";
 
     return (
@@ -31,10 +34,10 @@ export default function Matters() {
                             motive y prepare a nuestros alumnos para alcanzar sus metas académicas y personales.
                         </p>
                         <div className="d-flex align-items-center gap-2 border-bottom border-dark-subtle pb-1" style={{ cursor: 'pointer' }}>
-                            <h6 className="mb-0 fw-bold text-dark" style={{ letterSpacing: '1px' }}>Aprende más</h6>
-                            <IoIosArrowForward size={16} className="text-dark" />
+                            <button className="btn btn-dark" onClick={goToYoutubeChannel}> Aprende más
+                                <IoIosArrowForward size={16}/>
+                            </button>
                         </div>
-                        <div className="bg-primary" style={{ height: '5px', width: '95px' }} />
                     </div>
                 </div>
 

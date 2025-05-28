@@ -56,7 +56,7 @@ export default function Navbar() {
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-5">
             <li className="nav-item">
               <a
-                className="nav-link text-secondary fw-semibold"
+                className="nav-link"
                 href="#"
               >
                 Inicio
@@ -64,7 +64,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                className="nav-link text-secondary fw-semibold"
+                className="nav-link"
                 href="#"
               >
                 Cursos
@@ -72,7 +72,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                className="nav-link text-secondary fw-semibold"
+                className="nav-link"
                 href="#"
               >
                 Nosotros
@@ -80,7 +80,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                className="nav-link text-secondary fw-semibold"
+                className="nav-link"
                 href="#"
               >
                 Contacto
