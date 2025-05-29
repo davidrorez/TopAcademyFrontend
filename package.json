@@ -1,7 +1,6 @@
 {
-  "name": "academy-landing-page",
+  "name": "top-academy",
   "version": "1.0.1",
-  "homepage": "https://mahdi-hazrati.github.io/Academy-Landing-Page/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
