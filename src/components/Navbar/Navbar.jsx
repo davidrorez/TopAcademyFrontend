@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
       <div className="container-fluid">
         {/* Logo + Title */}
-        <a href="#" className="navbar-brand d-flex align-items-center gap-2">
+        <a href="/" className="navbar-brand d-flex align-items-center gap-2">
           <img
             src={logo}
             alt="Top Academy"

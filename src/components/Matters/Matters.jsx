@@ -1,6 +1,5 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import kid from '../../assets/kid.png';
 import rectangleBg from '../../assets/t.svg';
 
 export default function Matters() {
