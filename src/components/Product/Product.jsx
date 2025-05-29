@@ -13,7 +13,8 @@ export default function Product({
   badge,
 }) {
   return (
-    <div className="card product shadow-sm rounded-4 overflow-hidden" style={{ height: "900px" }}>
+    <div className="card product shadow-sm rounded-4 overflow-hidden" id="curses"
+      style={{ height: "900px" }}>
       <div className="position-relative top-section">
         <img
           src={thumbnails}

@@ -5,7 +5,8 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="page-footer font-small blue pt-4" style={{ backgroundColor: "#2d5bfd" }}>
+    <footer className="page-footer font-small blue pt-4" id="info"
+      style={{ backgroundColor: "#2d5bfd" }}>
       <div className="container-fluid text-center text-md-left text-white">
         <div className="row">
           {/* Sección info */}

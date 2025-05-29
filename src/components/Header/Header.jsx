@@ -5,7 +5,7 @@ import rectangleBg from "../../assets/t2.svg";
 
 export default function Header() {
   return (
-    <div className="container-fluid mt-2 pt-5">
+    <div className="container-fluid mt-2 pt-5" id="home">
       {/* SECCIÓN SUPERIOR */}
         <div
         className="row px-4 py-5 align-items-center"
@@ -30,7 +30,8 @@ export default function Header() {
             <button className="btn btn-primary px-4 py-2 rounded-3">
               Empezar Ahora
             </button>
-            <button className="btn btn-outline-primary px-4 py-2 rounded-3">
+            <button className="btn btn-outline-primary px-4 py-2 rounded-3"
+              onClick={() => document.getElementById('more-info')?.scrollIntoView({ behavior: 'smooth' })}>
               Más información
             </button>
           </div>
@@ -51,7 +52,7 @@ export default function Header() {
       </div>
 
       {/* SECCIÓN INFERIOR */}
-      <div className="container py-5">
+      <div className="container py-5" id="more-info">
         <div className="row g-4">
           <div className="col-12 col-md-4">
             <Card

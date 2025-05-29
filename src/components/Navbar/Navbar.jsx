@@ -57,7 +57,7 @@ export default function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#"
+                href="#home"
               >
                 Inicio
               </a>
@@ -65,7 +65,15 @@ export default function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#"
+                href="#us"
+              >
+                Nosotros
+              </a>
+            </li>
+            <li className="nav-item">
+                            <a
+                className="nav-link"
+                href="#curses"
               >
                 Cursos
               </a>
@@ -73,17 +81,17 @@ export default function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#"
-              >
-                Nosotros
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#"
+                href="#contact"
               >
                 Contacto
+              </a>
+            </li>
+                        <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#info"
+              >
+                Info
               </a>
             </li>
           </ul>
