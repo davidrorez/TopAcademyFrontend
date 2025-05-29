@@ -4,13 +4,10 @@ import Counter from "../components/Counter/Counter"
 import Matters from "../components/Matters/Matters"
 import Experts from "../components/Experts/Experts"
 import Review from "../components/Review/Review"
-import Courses from "../components/Courses/Courses"
 import Newsletter from "../components/Newsletter/Newsletter"
 import Footer from "../components/Footer/Footer"
 import Copyright from "../components/Copyright/Copyright"
 import "./App.css"
-import {initialize, pageview} from "react-ga"
-import { useEffect } from "react"
 
 export default function App() {
     // Analytics Google
@@ -34,7 +31,7 @@ export default function App() {
             <Experts />
             {/* Section 3 */}
 
-                        {/* Section 5 */}
+            {/* Section 5 */}
             <Newsletter />
             <Review />
             {/* Section 4 
