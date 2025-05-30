@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillStar, AiOutlineArrowRight } from "react-icons/ai";
 import "./Product.css";
+import { redirectToWhatsApp } from "../../utils/whatsapp"; 
 
 export default function Product({
   thumbnails,
@@ -12,8 +13,17 @@ export default function Product({
   stars,
   badge,
 }) {
+
+  const whatsappMessage = (title) => { 
+    redirectToWhatsApp({
+      phone: "50687884669",
+      message:
+        `¡Hola! Estoy interesado/a en obtener más información sobre el curso "${title}" en Top Academy.`,
+    });
+  }
+
   return (
-    <div className="card product shadow-sm rounded-4 overflow-hidden" id="curses"
+    <div className="card product shadow-sm rounded-4 overflow-hidden" id="cursos"
       style={{ height: "900px" }}>
       <div className="position-relative top-section">
         <img
@@ -47,12 +57,13 @@ export default function Product({
           name && listPrices[index] && (
             <div key={index} className="d-flex gap-2 align-items-center">
               <span className="text-muted fw-bold">{name}:</span>
-              <span className="text-primary fw-bold">₡{listPrices[index]}/mes</span>
+              <span className="text-primary fw-bold">{listPrices[index]}</span>
             </div>
           )
         ))}
 
-        <button className="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-3">
+        <button className="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-3"
+          onClick={() => whatsappMessage(title)}>
           Más información <AiOutlineArrowRight />
         </button>
       </div>

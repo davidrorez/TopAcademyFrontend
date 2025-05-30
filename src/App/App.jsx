@@ -35,8 +35,7 @@ export default function App() {
             <Newsletter />
             <Review />
             {/* Section 4 
-            <Courses />
-            */}
+            <Courses />*/}
 
             {/* Footer Section*/}
             <Footer />

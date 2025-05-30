@@ -11,7 +11,7 @@ export default function Matters() {
 
     return (
         <div
-            className="container-fluid py-5" id="us"
+            className="container-fluid py-5" id="nosotros"
             style={{
                 backgroundImage: `url(${rectangleBg})`,
                 backgroundSize: "cover",

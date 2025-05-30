@@ -3,16 +3,16 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import logo from "../../assets/academy-logo1.PNG";
+import { redirectToWhatsApp } from "../../utils/whatsapp"; 
 
 export default function Navbar() {
 
   const handleMatricularClick = () => {
-    const whatsappNumber = "50687884669"; 
-    const message = "¡Hola! Estoy muy interesado/a en matricularme en Top Academy. Me gustaría recibir más información sobre los cursos disponibles, los horarios y el proceso de inscripción. Muchas gracias.";
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-
-    window.open(whatsappUrl, "_blank");
+    redirectToWhatsApp({
+      phone: "50687884669",
+      message:
+        "¡Hola! Estoy muy interesado/a en matricularme en Top Academy. Me gustaría recibir más información sobre los cursos disponibles, los horarios y el proceso de inscripción. Muchas gracias.",
+    });
   };
 
   return (
@@ -26,16 +26,6 @@ export default function Navbar() {
             style={{ width: "70px", height: "auto", userSelect: "none" }}
             draggable={false}
           />
-          <span
-            style={{
-              color: "#252b42",
-              fontWeight: "700",
-              fontSize: "24px",
-              letterSpacing: "0.1px",
-            }}
-          >
-            Top Academy
-          </span>
         </a>
 
         {/* Botón hamburguesa */}
@@ -53,56 +43,31 @@ export default function Navbar() {
 
         {/* Menú colapsable */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-5">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-3">
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#home"
-              >
-                Inicio
-              </a>
+              <a className="nav-link" href="#inicio">Inicio</a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#us"
-              >
-                Nosotros
-              </a>
+              <a className="nav-link" href="#nosotros">Nosotros</a>
             </li>
             <li className="nav-item">
-                            <a
-                className="nav-link"
-                href="#curses"
-              >
-                Cursos
-              </a>
+              <a className="nav-link" href="#cursos">Cursos</a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#contact"
-              >
-                Contacto
-              </a>
+              <a className="nav-link" href="#contacto">Contacto</a>
             </li>
-                        <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#info"
-              >
-                Info
-              </a>
+            <li className="nav-item">
+              <a className="nav-link" href="#info">Info</a>
             </li>
           </ul>
 
-          {/* Botón Matrícular */}
+          {/* Botón Matricular */}
           <button
             type="button"
             onClick={handleMatricularClick}
-            className="btn btn-primary d-flex align-items-center gap-2 px-4 py-2 text-uppercase fw-medium"
+            className="btn btn-primary d-flex align-items-center gap-2 px-4 py-2 text-uppercase fw-medium mt-3 mt-lg-0"
           >
-            Matrícular <BiRightArrowAlt size={20} />
+            Matricúlate aquí <BiRightArrowAlt size={20} />
           </button>
         </div>
       </div>

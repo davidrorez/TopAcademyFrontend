@@ -23,7 +23,7 @@ export default function Experts() {
                         title={"Bachillerato por Madurez"}
                         description={"Obtén la preparación necesaria para superar tus exámenes con éxito."}
                         listNames={["Materias Disponibles", "Cualquier materia sola", "Solo Matématicas", "Bloque completo"]}	
-                        listPrices={["Sociales, Cívica, Español, Inglés, Biología, Matemáticas", "8,000", "10,000", "30,000"]}
+                        listPrices={["Sociales, Cívica, Español, Inglés, Biología, Matemáticas", "₡8,000/mes", "₡10,000/mes", "₡30,000/mes"]}
                         badge={"30%"}
                         stars={"5.0"}
                     />
@@ -36,7 +36,7 @@ export default function Experts() {
                         title={"Tercer Ciclo (séptimo, octavo y noveno) por Madurez"}
                         description={"Refuerza tus conocimientos y prepárate para el bachillerato con confianza."}
                         listNames={["1 materia", "2 materias", "3 materias", "4 materias", "5 y 6 materias", "Bloque completo"]}
-                        listPrices={["5,000", "10,000", "15,000", "20,000", "25,000", "25,000"]}
+                        listPrices={["₡5,000/mes", "₡10,000/mes", "₡15,000/mes", "₡20,000/mes", "₡25,000/mes", "₡25,000/mes"]}
                         badge={"20%"}
                         stars={"4.9"}
                     />
@@ -49,7 +49,7 @@ export default function Experts() {
                         title={"Primaria por Madurez"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["1 materia", "2 materias", "3 materias", "4 materias", "5 materias", "Bloque completo"]}
-                        listPrices={["5,000", "10,000", "15,000", "20,000", "25,000", "25,000"]}
+                        listPrices={["₡5,000/mes", "₡10,000/mes", "₡15,000/mes", "₡20,000/mes", "₡25,000/mes", "₡25,000/mes"]}
                         badge={"20%"}
                         stars={"4.8"}
                     />
@@ -62,7 +62,7 @@ export default function Experts() {
                         title={"Curso de Inglés"}
                         description={"Obtén la preparación necesaria para superar tus exámenes con éxito."}
                         listNames={["Regular", "Semi-Intensivo", "Intensivo", "Costo matrícula"]}	
-                        listPrices={["20,000", "42,500", "60,000", "15,000"]}
+                        listPrices={["₡20,000/mes", "₡42,500/mes", "₡60,000/mes", "₡15,000/mes"]}
                         badge={"30%"}
                         stars={"5.0"}
                     />
@@ -75,7 +75,7 @@ export default function Experts() {
                         title={"Curso de Portugués"}
                         description={"Refuerza tus conocimientos y prepárate para el bachillerato con confianza."}
                         listNames={["Regular", "Semi-Intensivo", "Intensivo", "Costo matrícula"]}	
-                        listPrices={["20,000", "42,500", "60,000", "15,000"]}
+                        listPrices={["₡20,000/mes", "₡42,500/mes", "₡60,000/mes", "₡15,000/mes"]}
                         badge={"20%"}
                         stars={"4.9"}
                     />
@@ -88,7 +88,7 @@ export default function Experts() {
                         title={"Cursos Técnicos"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["Administración", "Asistente Preescolar", "Recursos Humanos", "Logística", "Contabilidad", "Mercadeo", "Costo matrícula"]}
-                        listPrices={["20,000", "20,000", "20,000", "20,000", "20,000", "20,000", "15,000"]}
+                        listPrices={["₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡15,000/mes"]}
                         badge={"20%"}
                         stars={"4.8"}
                     />
@@ -101,7 +101,7 @@ export default function Experts() {
                         title={"Cursos Libres"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["Administración", "Asistente Preescolar", "Recursos Humanos", "Logística", "Contabilidad", "Mercadeo", "Costo matrícula"]}
-                        listPrices={["12,000", "12,000", "12,000", "12,000", "12,000", "12,000", "15,000"]}
+                        listPrices={["₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡15,000/mes"]}
                         badge={"20%"}
                         stars={"4.8"}
                     />
@@ -114,7 +114,7 @@ export default function Experts() {
                         title={"Talleres"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["Psicopedagogía", "Servicio al Cliente", "Habilidades Blandas"]}
-                        listPrices={["15,000", "15,000", "15,000"]}
+                        listPrices={["₡15,000/mes", "₡15,000/mes", "₡15,000/mes"]}
                         badge={"20%"}
                         stars={"4.8"}
                     />
@@ -127,7 +127,7 @@ export default function Experts() {
                         title={"Admisión"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["UCR y UNA", "TEC"]}
-                        listPrices={["0", "0"]}
+                        listPrices={["₡0/mes", "₡0/mes"]}
                         badge={"20%"}
                         stars={"4.8"}
                     />
