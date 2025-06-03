@@ -90,7 +90,7 @@ export default function ContactoRedes() {
           </p>
         </div>
 
-        <div className="d-flex justify-content-center gap-4">
+        <div className="d-flex justify-content-center gap-3">
           <a
             href="https://www.facebook.com/Topacademycr"
             target="_blank"

@@ -30,14 +30,13 @@ export default function Header() {
         minHeight: "500px", 
       }}
     >
-      
         {/* IZQUIERDA */}
         <div className="col-12 col-lg-6 d-flex flex-column gap-4 mt-4">
           <span
             style={{
               color: "#252b42",
               fontWeight: "700",
-              fontSize: "2.2rem", // más responsivo
+              fontSize: "2.2rem",
               letterSpacing: "0.1px",
             }}
           >

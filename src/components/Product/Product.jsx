@@ -26,12 +26,13 @@ export default function Product({
     <div className="card product shadow-sm rounded-4 overflow-hidden" id="cursos"
       style={{ height: "900px" }}>
       <div className="position-relative top-section">
-        <img
-          src={thumbnails}
-          alt={`${title} product thumbnail`}
-          className="card-img-top object-fit-cover"
-          style={{ height: "300px",  width: "100%" }}
-        />
+<img
+  src={thumbnails}
+  alt={`${title} product thumbnail`}
+  className="card-img-top img-fluid w-100 object-fit-cover"
+  style={{ maxHeight: "300px" }}
+/>
+
         {badge && (
           <div className="position-absolute top-0 start-0 m-2 px-2 py-1 bg-danger text-white rounded">
             {badge}
