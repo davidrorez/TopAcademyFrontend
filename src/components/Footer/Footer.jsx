@@ -1,6 +1,13 @@
 import React from "react";
-import { AiOutlinePhone, AiOutlineFacebook, AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+import {
+  AiOutlinePhone,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineMail,
+  AiOutlineYoutube,
+} from "react-icons/ai";
 import { BiMap } from "react-icons/bi";
+import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 import "./Footer.css";
 
 export default function Footer() {
@@ -45,24 +52,32 @@ export default function Footer() {
             <ul className="list-unstyled">
               <li>
                 <AiOutlineFacebook style={{ marginRight: 8 }} />
-                <a
-                  href="https://www.facebook.com/Topacademycr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
-                >
-                  facebook.com/Topacademycr
+                <a href="https://www.facebook.com/Topacademycr" target="_blank" rel="noopener noreferrer" className="text-white">
+                  Facebook
                 </a>
               </li>
               <li>
                 <AiOutlineInstagram style={{ marginRight: 8 }} />
-                <a
-                  href="https://www.instagram.com/topacademycr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
-                >
-                  instagram.com/topacademycr
+                <a href="https://www.instagram.com/topacademycr/" target="_blank" rel="noopener noreferrer" className="text-white">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <FaTiktok style={{ marginRight: 8 }} />
+                <a href="https://www.tiktok.com/@topacademycr" target="_blank" rel="noopener noreferrer" className="text-white">
+                  Tiktok
+                </a>
+              </li>
+              <li>
+                <AiOutlineYoutube style={{ marginRight: 8 }} />
+                <a href="https://www.youtube.com/@topacademycr" target="_blank" rel="noopener noreferrer" className="text-white">
+                  Youtube
+                </a>
+              </li>
+              <li>
+                <FaWhatsapp style={{ marginRight: 8 }} />
+                <a href="https://wa.me/50687884669" target="_blank" rel="noopener noreferrer" className="text-white">
+                  WhatsApp
                 </a>
               </li>
             </ul>

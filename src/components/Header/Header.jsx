@@ -32,7 +32,7 @@ export default function Header() {
     >
       
         {/* IZQUIERDA */}
-        <div className="col-12 col-lg-6 d-flex flex-column gap-4">
+        <div className="col-12 col-lg-6 d-flex flex-column gap-4 mt-4">
           <span
             style={{
               color: "#252b42",
