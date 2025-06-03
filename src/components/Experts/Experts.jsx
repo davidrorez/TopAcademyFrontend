@@ -2,9 +2,16 @@ import React from "react";
 import SectionHeader from "../Section-Header/SectionHeader";
 import Product from "../Product/Product";
 import "./Experts.css";
-import ProductThumbnails1 from "../../assets/product-thumbnails.jpg";
-import ProductThumbnails2 from "../../assets/product-thumbnails-2.jpg";
-import ProductThumbnails3 from "../../assets/product-thumbnails-2.jpg";
+
+import BachiMadurez from "../../assets/bachi-madurez.jpg";
+import TercerCiclo from "../../assets/tercer-ciclo.jpg";
+import Primaria from "../../assets/primaria.jpg";
+import CursosTecnicos from "../../assets/cursos-tecnicos.jpg";
+import CursosLibres from "../../assets/cursos-libres.jpg";
+import CursosAdmision from "../../assets/cursos-admision.jpg";
+import Talleres from "../../assets/talleres.jpg";
+import CursosPortugues from "../../assets/cursos-portugues.jpg";
+import CursosIngles from "../../assets/cursos-ingles.jpg";
 
 export default function Experts() {
     return (
@@ -18,7 +25,7 @@ export default function Experts() {
 
                 <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails3}
+                        thumbnails={BachiMadurez}
                         category={"Bachillerato"}
                         title={"Bachillerato por Madurez"}
                         description={"Obtén la preparación necesaria para superar tus exámenes con éxito."}
@@ -31,7 +38,7 @@ export default function Experts() {
 
                 <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails2}
+                        thumbnails={TercerCiclo}
                         category={"Tercer Ciclo"}
                         title={"Tercer Ciclo (séptimo, octavo y noveno) por Madurez"}
                         description={"Refuerza tus conocimientos y prepárate para el bachillerato con confianza."}
@@ -44,7 +51,7 @@ export default function Experts() {
 
                 <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails1}
+                        thumbnails={Primaria}
                         category={"Primaria"}
                         title={"Primaria por Madurez"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
@@ -57,7 +64,7 @@ export default function Experts() {
 
                 <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails3}
+                        thumbnails={CursosIngles}
                         category={"Curso Inglés"}
                         title={"Curso de Inglés"}
                         description={"Obtén la preparación necesaria para superar tus exámenes con éxito."}
@@ -70,7 +77,7 @@ export default function Experts() {
 
                 <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails2}
+                        thumbnails={CursosPortugues}
                         category={"Curso Portugués"}
                         title={"Curso de Portugués"}
                         description={"Refuerza tus conocimientos y prepárate para el bachillerato con confianza."}
@@ -83,7 +90,7 @@ export default function Experts() {
 
                 <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails1}
+                        thumbnails={CursosTecnicos}
                         category={"Cursos Técnicos"}
                         title={"Cursos Técnicos"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
@@ -96,7 +103,7 @@ export default function Experts() {
 
                 <div className="col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails1}
+                        thumbnails={CursosLibres}
                         category={"Cursos Libres"}
                         title={"Cursos Libres"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
@@ -109,7 +116,7 @@ export default function Experts() {
 
                 <div className="col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails1}
+                        thumbnails={Talleres}
                         category={"Talleres"}
                         title={"Talleres"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
@@ -122,9 +129,9 @@ export default function Experts() {
 
                 <div className="col-md-4 d-flex justify-content-center mb-4">
                     <Product
-                        thumbnails={ProductThumbnails1}
+                        thumbnails={CursosAdmision}
                         category={"Admisión"}
-                        title={"Admisión"}
+                        title={"Cursos de Admisión"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["UCR y UNA", "TEC"]}
                         listPrices={["₡0/mes", "₡0/mes"]}
