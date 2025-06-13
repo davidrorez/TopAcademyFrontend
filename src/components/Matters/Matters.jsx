@@ -5,8 +5,9 @@ import VideoEmbed from "./VideoEmbed.jsx";
 export default function Matters() {
 
     const goToYoutubeChannel = () => {
-        window.open("https://www.instagram.com/topacademycr", "_blank")
+        window.open("https://www.youtube.com/", "_blank")
     };
+    const linkYoutubeVideo = "https://www.instagram.com/p/DKc34REgEW9/";
 
     return (
         <div
@@ -41,15 +42,7 @@ export default function Matters() {
 
                 {/* Right Section */}
                 <div className="col-lg-5 col-md-6 position-relative d-flex justify-content-center">
-                    <div
-                        className="ratio"
-                        style={{
-                            aspectRatio: '9 / 16',
-                            width: '100%',
-                            maxWidth: '360px',
-                            maxHeight: '500px',  // limita la altura máxima
-                            }}
-                            >
+                    <div>
                         <VideoEmbed url="https://www.instagram.com/p/DKc34REgEW9/" />
                     </div>
                 </div>
