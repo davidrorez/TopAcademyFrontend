@@ -1,16 +1,51 @@
-.review{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 100px 0px;
-    gap: 60px;
-    align-items: flex-start;
+.card {
+  height: 320px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center; /* Asegura alineación si hay inconsistencias */
 }
-.review-container{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
+
+/* 📱 Responsivo para tablets y móviles */
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+    min-height: auto; /* Cambiado de unset a auto por compatibilidad */
+  }
+}
+
+.card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 🛠️ corrige el warning anterior */
+  align-items: center; /* Alineación centrada */
+  text-align: center;
+  gap: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  overflow-wrap: break-word;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 20px 20px;
 }

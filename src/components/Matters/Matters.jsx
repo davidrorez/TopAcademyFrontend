@@ -1,13 +1,12 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import rectangleBg from '../../assets/t.svg';
-
+import VideoEmbed from "./VideoEmbed.jsx";
 export default function Matters() {
 
     const goToYoutubeChannel = () => {
-        window.open("https://www.youtube.com/", "_blank")
+        window.open("https://www.instagram.com/topacademycr", "_blank")
     };
-    const linkYoutubeVideo = "https://www.youtube.com/embed/dQw4w9WgXcQ";
 
     return (
         <div
@@ -42,14 +41,16 @@ export default function Matters() {
 
                 {/* Right Section */}
                 <div className="col-lg-5 col-md-6 position-relative d-flex justify-content-center">
-                    <div className="ratio ratio-16x9" style={{ width: '100%', maxWidth: '420px' }}>
-                        <iframe
-                            src={linkYoutubeVideo}
-                            title="Video promocional"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            style={{ borderRadius: '12px', width: '100%', height: '100%' }}
-                        ></iframe>
+                    <div
+                        className="ratio"
+                        style={{
+                            aspectRatio: '9 / 16',
+                            width: '100%',
+                            maxWidth: '360px',
+                            maxHeight: '500px',  // limita la altura máxima
+                            }}
+                            >
+                        <VideoEmbed url="https://www.instagram.com/p/DKc34REgEW9/" />
                     </div>
                 </div>
             </div>
