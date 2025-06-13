@@ -45,7 +45,7 @@ export default function Product({
           <a href={`/${category}`} className="text-primary fw-bold text-decoration-none">
             {category}
           </a>
-          <div className="bg-dark text-white px-2 py-1 rounded d-flex align-items-center gap-1">
+          <div className="bg-dark text-white mx-2 px-2 py-1 rounded d-flex align-items-center gap-1">
             <AiFillStar className="text-warning" />
             <span className="small">{stars}</span>
           </div>
