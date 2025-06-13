@@ -7,7 +7,6 @@ export default function Matters() {
     const goToYoutubeChannel = () => {
         window.open("https://www.youtube.com/", "_blank")
     };
-    const linkYoutubeVideo = "https://www.instagram.com/p/DKc34REgEW9/";
 
     return (
         <div
