@@ -8,7 +8,6 @@ import TercerCiclo from "../../assets/tercer-ciclo.jpg";
 import Primaria from "../../assets/primaria.jpg";
 import CursosTecnicos from "../../assets/cursos-tecnicos.jpg";
 import CursosLibres from "../../assets/cursos-libres.jpg";
-import CursosAdmision from "../../assets/cursos-admision.jpg";
 import Talleres from "../../assets/talleres.jpg";
 import CursosPortugues from "../../assets/cursos-portugues.jpg";
 import CursosIngles from "../../assets/cursos-ingles.jpg";
@@ -122,19 +121,6 @@ export default function Experts() {
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["Psicopedagogía", "Servicio al Cliente", "Habilidades Blandas"]}
                         listPrices={["₡15,000/mes", "₡15,000/mes", "₡15,000/mes"]}
-                        badge={"20%"}
-                        stars={"4.8"}
-                    />
-                </div>
-
-                <div className="col-md-4 d-flex justify-content-center mb-4">
-                    <Product
-                        thumbnails={CursosAdmision}
-                        category={"Admisión"}
-                        title={"Cursos de Admisión"}
-                        description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
-                        listNames={["UCR y UNA", "TEC"]}
-                        listPrices={["₡0/mes", "₡0/mes"]}
                         badge={"20%"}
                         stars={"4.8"}
                     />

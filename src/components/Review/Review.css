@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   background-color: #fff;
@@ -24,8 +24,8 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* 🛠️ corrige el warning anterior */
-  align-items: center; /* Alineación centrada */
+  justify-content: flex-start;
+  align-items: center; 
   text-align: center;
   gap: 10px;
 }

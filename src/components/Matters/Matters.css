@@ -110,3 +110,24 @@
     max-width: 80%; /* ancho aún menor en móviles pequeños */
   }
 }
+
+.instagram-responsive-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 120%; /* Ajusta este valor según la altura esperada del embed */
+}
+
+.instagram-media {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: #fff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
