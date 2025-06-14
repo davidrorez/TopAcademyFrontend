@@ -1,16 +1,17 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import rectangleBg from '../../assets/t.svg';
-import VideoEmbed from "./VideoEmbed.jsx";
+
 export default function Matters() {
 
     const goToYoutubeChannel = () => {
         window.open("https://www.youtube.com/", "_blank")
     };
+    const linkYoutubeVideo = "https://www.youtube.com/embed/-C3guV3goqs";
 
     return (
         <div
-            className="container-fluid py-5" id="nosotros"
+            className="container-fluid py-5" id="us"
             style={{
                 backgroundImage: `url(${rectangleBg})`,
                 backgroundSize: "cover",
@@ -41,8 +42,15 @@ export default function Matters() {
 
                 {/* Right Section */}
                 <div className="col-lg-5 col-md-6 position-relative d-flex justify-content-center">
-                    <div>
-                        <VideoEmbed url="https://www.instagram.com/p/DKc34REgEW9/" />
+                    <div className="ratio ratio-16x9" style={{ width: '100%', maxWidth: '420px' }}>
+                        <iframe width="468"
+                            height="832"
+                            src={linkYoutubeVideo}
+                            title="Top Academy"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
