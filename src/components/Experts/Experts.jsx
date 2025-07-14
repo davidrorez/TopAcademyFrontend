@@ -68,7 +68,7 @@ export default function Experts() {
                         title={"Curso de Inglés"}
                         description={"Obtén la preparación necesaria para superar tus exámenes con éxito."}
                         listNames={["Regular", "Semi-Intensivo", "Intensivo", "Costo matrícula"]}	
-                        listPrices={["₡20,000/mes", "₡42,500/mes", "₡60,000/mes", "₡15,000/mes"]}
+                        listPrices={["₡15,000/mes", "₡42,500/mes", "₡60,000/mes", "₡5,000 (2x1 en personas más curso de regalía)"]}
                         badge={"30%"}
                         stars={"5.0"}
                     />
@@ -81,7 +81,7 @@ export default function Experts() {
                         title={"Curso de Portugués"}
                         description={"Refuerza tus conocimientos y prepárate para el bachillerato con confianza."}
                         listNames={["Regular", "Semi-Intensivo", "Intensivo", "Costo matrícula"]}	
-                        listPrices={["₡20,000/mes", "₡42,500/mes", "₡60,000/mes", "₡15,000/mes"]}
+                        listPrices={["₡ 15,000/mes", "₡42,500/mes", "₡60,000/mes", "₡5,000 (2x1 en personas más curso de regalía)"]}
                         badge={"20%"}
                         stars={"4.9"}
                     />
@@ -94,7 +94,7 @@ export default function Experts() {
                         title={"Cursos Técnicos"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["Administración", "Asistente Preescolar", "Recursos Humanos", "Logística", "Contabilidad", "Mercadeo", "Costo matrícula"]}
-                        listPrices={["₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡15,000/mes"]}
+                        listPrices={["₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡20,000/mes", "₡15,000"]}
                         badge={"20%"}
                         stars={"4.8"}
                     />
@@ -107,7 +107,7 @@ export default function Experts() {
                         title={"Cursos Libres"}
                         description={"Desarrolla las bases del aprendizaje en un entorno divertido y estimulante."}
                         listNames={["Administración", "Asistente Preescolar", "Recursos Humanos", "Logística", "Contabilidad", "Mercadeo", "Costo matrícula"]}
-                        listPrices={["₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡15,000/mes"]}
+                        listPrices={["₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡12,000/mes", "₡15,000"]}
                         badge={"20%"}
                         stars={"4.8"}
                     />

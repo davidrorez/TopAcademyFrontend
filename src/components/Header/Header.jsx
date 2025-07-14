@@ -85,7 +85,7 @@ export default function Header() {
       </div>
 
       {/* SECCIÓN INFERIOR */}
-      <div className="container py-5" id="mas-info">
+      <div className="container py-5" id="nosotros">
         <div className="row g-4">
           <div className="col-12 col-md-4">
             <Card
