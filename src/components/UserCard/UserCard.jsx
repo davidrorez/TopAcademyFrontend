@@ -4,7 +4,7 @@ import "./UserCard.css"
 
 export default function UserCard({profile, username, title, instagram, github, twiiter}){
     return(
-        <div className="user-card">
+        <div className="user-card" style={{ backgroundColor: "#f9f9f9" }}>
             <div className="thumbnails">
                 <img src={profile} alt={username + "'s avatar"} />
             </div>

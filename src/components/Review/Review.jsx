@@ -25,7 +25,7 @@ export default function Review() {
   }
 
   return (
-    <div className="review">
+    <div className="review" id="testimonios">
       <SectionHeader
         subtitle={"Testimonios"}
         title={"Lo que dicen nuestros estudiantes"}
@@ -46,7 +46,7 @@ export default function Review() {
                 <div className="row">
                   {group.map((review, i) => (
                     <div className="col-md-4" key={i}>
-                      <div className="card text-center mb-3">
+                      <div className="card text-center mb-3" style={{ backgroundColor: "#f9f9f9" }}>
                         <div className="card-body">
                           <img
                             src={avatarImages[review.gender]}

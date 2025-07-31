@@ -24,6 +24,7 @@ export default function Product({
     <div
       className="card product shadow-sm rounded-4 overflow-hidden h-100"
       id="cursos"
+      style={{ backgroundColor: "#f9f9f9" }}
     >
       <div className="position-relative top-section">
         <img
