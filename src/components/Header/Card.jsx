@@ -7,7 +7,7 @@ export default function Card({ icon, title, description }) {
           width: "60px",
           height: "60px",
           borderRadius: "50%",
-          backgroundColor: "#007bff1a", // color de fondo suave
+          backgroundColor: "#007bff1a",
           color: "#007bff",
           fontSize: "1.8rem",
         }}

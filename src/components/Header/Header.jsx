@@ -1,6 +1,6 @@
 import Card from "./Card";
 import { FaGraduationCap, FaChild, FaSchool } from "react-icons/fa";
-import placeHolderImg from "../../assets/women3.png";
+import placeHolderImg from "../../assets/women-top-academy.png";
 import rectangleBg from "../../assets/t2.svg";
 import { redirectToWhatsApp } from "../../utils/whatsapp";
 import "./../Header/Header.css";
@@ -17,19 +17,19 @@ export default function Header() {
   return (
     <div className="container-fluid mt-2 pt-5" id="inicio">
       {/* SECCIÓN SUPERIOR */}
-    <div
-      className="row px-4 py-5 align-items-center align-items-center"
-      style={{
-        backgroundImage: `url(${rectangleBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",       
-        backgroundRepeat: "no-repeat",
-        borderTopLeftRadius: "50px",
-        borderBottomRightRadius: "100px",
-        marginBottom: "5rem",
-        minHeight: "500px", 
-      }}
-    >
+      <div
+        className="row px-4 py-5 align-items-center align-items-center"
+        style={{
+          backgroundImage: `url(${rectangleBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          borderTopLeftRadius: "50px",
+          borderBottomRightRadius: "100px",
+          marginBottom: "5rem",
+          minHeight: "500px",
+        }}
+      >
         {/* IZQUIERDA */}
         <div className="col-12 col-lg-6 d-flex flex-column gap-4 mt-4">
           <span
@@ -74,12 +74,12 @@ export default function Header() {
 
         {/* DERECHA */}
         <div className="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center mt-4 mt-lg-0">
-<img
-  src={placeHolderImg}
-  alt="intro"
-  className="img-fluid responsive-img"
-  draggable="false"
-/>
+          <img
+            src={placeHolderImg}
+            alt="intro"
+            className="img-fluid responsive-img"
+            draggable="false"
+          />
 
         </div>
       </div>

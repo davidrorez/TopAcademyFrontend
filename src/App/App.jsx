@@ -8,6 +8,8 @@ import Newsletter from "../components/Newsletter/Newsletter"
 import LocationMap from "../components/Location/LocationMap"
 import Footer from "../components/Footer/Footer"
 import Copyright from "../components/Copyright/Copyright"
+import ImageComponent from "../components/ImageComponent/ImageComponent"
+import Graduations from "../components/Graduations/Graduations"
 import "./App.css"
 
 export default function App() {
@@ -30,11 +32,15 @@ export default function App() {
 
             <Experts />
 
-            <Newsletter />
+            <Graduations />
 
             <Review />
 
             <LocationMap />
+            
+            <Newsletter />
+            
+            <ImageComponent />
 
             <Footer />
 
