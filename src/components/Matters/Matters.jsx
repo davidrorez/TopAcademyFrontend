@@ -1,4 +1,3 @@
-import { IoIosArrowForward } from "react-icons/io";
 import rectangleBg from '../../assets/t.svg';
 
 export default function Matters() {
