@@ -29,7 +29,7 @@ export default function Experts() {
                         title={"Bachillerato por Madurez"}
                         description={"Obtén la preparación necesaria para superar tus exámenes con éxito."}
                         listNames={["Materias Disponibles", "Cualquier materia sola", "Solo Matématicas", "Bloque completo"]}	
-                        listPrices={["Sociales, Cívica, Español, Inglés, Biología, Matemáticas", "₡6,000/mes", "₡10,000/mes", "₡30,000/mes"]}
+                        listPrices={["Sociales, Cívica, Español, Inglés, Biología, Matemáticas", "₡8,000/mes", "₡10,000/mes", "₡30,000/mes"]}
                         badge={"30%"}
                         stars={"5.0"}
                     />
@@ -68,7 +68,7 @@ export default function Experts() {
                         title={"Curso de Inglés"}
                         description={"Obtén la preparación necesaria para superar tus exámenes con éxito."}
                         listNames={["Regular", "Semi-Intensivo", "Intensivo", "Costo matrícula"]}	
-                        listPrices={["₡15,000/mes", "₡40,000/mes", "₡60,000/mes", "₡5,000 (2x1 en personas más curso de regalía)"]}
+                        listPrices={["₡20,000/mes", "₡40,000/mes", "₡60,000/mes", "₡10,000 (2x1 en personas más curso de regalía)"]}
                         badge={"30%"}
                         stars={"5.0"}
                     />
@@ -81,7 +81,7 @@ export default function Experts() {
                         title={"Curso de Portugués"}
                         description={"Refuerza tus conocimientos y prepárate para el bachillerato con confianza."}
                         listNames={["Regular", "Semi-Intensivo", "Intensivo", "Costo matrícula"]}	
-                        listPrices={["₡ 15,000/mes", "₡40,000/mes", "₡60,000/mes", "₡5,000 (2x1 en personas más curso de regalía)"]}
+                        listPrices={["₡20,000/mes", "₡40,000/mes", "₡60,000/mes", "₡10,000 (2x1 en personas más curso de regalía)"]}
                         badge={"20%"}
                         stars={"4.9"}
                     />

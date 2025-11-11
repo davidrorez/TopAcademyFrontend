@@ -43,7 +43,7 @@ export default function Header() {
             Top Academy
           </span>
           <h1 className="fw-bold text-dark display-5 display-md-4">
-            1000+ Estudiantes
+            3000+ Estudiantes
             <br />
             CONFÍAN EN NOSOTROS.
           </h1>
