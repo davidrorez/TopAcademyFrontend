@@ -63,7 +63,7 @@ export default function Header() {
               className="btn btn-outline-primary w-100 px-4 py-2 rounded-3"
               onClick={() =>
                 document
-                  .getElementById("mas-info")
+                  .getElementById("nosotros")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
