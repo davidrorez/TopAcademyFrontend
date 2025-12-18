@@ -1,4 +1,5 @@
 import { AiFillStar, AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import "./Product.css";
 
 export default function Product({
@@ -50,12 +51,12 @@ export default function Product({
 
         <p className="card-text text-muted small text-center">{description}</p>
 
-        <a
-          href={`/curso/${paramName}`}
-          className="btn btn-primary w-100 mt-auto d-flex justify-content-center align-items-center gap-2 rounded-3 fw-semibold"
-        >
-          Más información <AiOutlineArrowRight />
-        </a>
+      <Link
+        to={`/curso/${paramName}`}
+        className="btn btn-primary w-100 mt-auto d-flex justify-content-center align-items-center gap-2 rounded-3 fw-semibold"
+      >
+        Más información <AiOutlineArrowRight />
+      </Link>
       </div>
     </div>
   );
