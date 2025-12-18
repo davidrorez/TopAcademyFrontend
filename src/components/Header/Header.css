@@ -5,6 +5,12 @@
   object-fit: contain;
 }
 
+.title{
+    font-size: 50px;
+    color: #252B42;
+    line-height: 50px;
+}
+
 @media (min-width: 992px) {
   .responsive-img {
     width: 60%;

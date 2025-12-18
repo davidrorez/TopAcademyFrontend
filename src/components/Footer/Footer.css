@@ -1,17 +1,8 @@
-.footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: flex-start;
-    padding: 50px 0px;
-    gap: 40px;
-    justify-content: center;
+.footer-link {
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
-.footer > .section{
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
+
+.footer-link:hover {
+  opacity: 0.75;
+  transform: translateX(3px);
 }

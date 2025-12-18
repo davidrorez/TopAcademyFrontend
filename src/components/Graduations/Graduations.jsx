@@ -8,27 +8,26 @@ import grad4 from "../../assets/grad4.jpg";
 import grad5 from "../../assets/grad5.jpg";
 import grad6 from "../../assets/grad6.jpg";
 
-// Array de imágenes de graduación
-const graduationImages = [grad1, grad2, grad3, grad4, grad5, grad6  ];
+const graduationImages = [grad1, grad2, grad3, grad4, grad5, grad6];
 
 export default function Graduations() {
-  // Dividir las imágenes en grupos de 3 para el carousel
   const slides = [];
   for (let i = 0; i < graduationImages.length; i += 3) {
     slides.push(graduationImages.slice(i, i + 3));
   }
 
   return (
-    <div className="graduations" id="graduations">
-      <SectionHeader
-        subtitle={"Graduaciones"}
-        title={"Momentos de nuestros estudiantes"}
-        paragraph={
-          "Celebramos los logros de nuestros estudiantes con estas memorables graduaciones."
-        }
-      />
-
-      <div className="container my-5">
+    <div className="graduations container" id="graduations">
+      <div data-aos="fade-up">
+        <SectionHeader
+          subtitle={"Graduaciones"}
+          title={"Momentos de nuestros estudiantes"}
+          paragraph={
+            "Celebramos los logros de nuestros estudiantes con estas memorables graduaciones."
+          }
+        />
+      </div>
+      <div className="container my-5" data-aos="fade-up">
         <div
           id="carouselGraduations"
           className="carousel slide"
@@ -43,7 +42,7 @@ export default function Graduations() {
                 <div className="row">
                   {group.map((imgSrc, i) => (
                     <div className="col-md-4" key={i}>
-                      <div className="card mb-3 border-0">
+                      <div className="card mb-3 border-0 shadow rounded-3">
                         <img
                           src={imgSrc}
                           alt={`Graduación ${i + 1}`}

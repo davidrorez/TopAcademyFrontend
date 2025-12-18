@@ -4,7 +4,7 @@ import "./ImageComponent.css"; // importa tu archivo CSS
 
 const ImageComponent = () => {
   return (
-    <div className="container-fluid image-container mt-2 pt-5 mb-5">
+    <div className="container-fluid image-container mt-2 pt-5 mb-5" data-aos="fade-up">
       <img
         src="/banner_top_academy.jpg"
         alt="Descripción de la imagen"

@@ -4,19 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Font Config */
-@font-face {
-    font-family: lato-font;
-    src: url("../../public/Lato/Lato-Regular.ttf");
+
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 48px;
 }
-body{
-    font-family: lato-font;
-    font-size: 16px;
-    background-color: #f7f7f7;
+
+p, span, li, h4, h5, h6, a {
+  font-family: 'Poppins', sans-serif;
+  white-space: pre-line;
+  line-height: 1.5;
 }
 
 .app{
-    margin: 0 auto;
-    width: 80%;
-    height: auto;
+  margin: 0 auto;
+  height: auto;
 }
