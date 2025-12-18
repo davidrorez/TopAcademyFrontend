@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { redirectToWhatsApp } from "../../utils/whatsapp";
-import { AiOutlineMail, AiOutlineUser, AiOutlineMessage } from "react-icons/ai";
+import { AiOutlineUser, AiOutlineMessage } from "react-icons/ai";
 
 export default function ConsultForm() {
   const [name, setName] = useState("");

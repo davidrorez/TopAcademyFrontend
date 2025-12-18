@@ -2,7 +2,6 @@ import { coursesInfo } from "../../utils/course-info";
 import { useParams } from "react-router-dom";
 import { redirectToWhatsApp } from "../../utils/whatsapp";
 import bgHeader from "../../assets/bg-header.jpg";
-import rectangleBg from "../../assets/t2.svg";
 import "./../Header/Header.css";
 
 const CourseHeader = () => {
