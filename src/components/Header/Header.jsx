@@ -1,7 +1,8 @@
 import Card from "./Card";
 import { FaGraduationCap, FaChild, FaSchool } from "react-icons/fa";
-import placeHolderImg from "../../assets/women3.png";
+import placeHolderImg from "../../assets/women-top-academy.png";
 import rectangleBg from "../../assets/t2.svg";
+import bgHeader from "../../assets/bg-header.jpg";
 import { redirectToWhatsApp } from "../../utils/whatsapp";
 import "./../Header/Header.css";
 
@@ -15,78 +16,95 @@ export default function Header() {
   };
 
   return (
-    <div className="container-fluid mt-2 pt-5" id="inicio">
-      {/* SECCIÓN SUPERIOR */}
-    <div
-      className="row px-4 py-5 align-items-center align-items-center"
-      style={{
-        backgroundImage: `url(${rectangleBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",       
-        backgroundRepeat: "no-repeat",
-        borderTopLeftRadius: "50px",
-        borderBottomRightRadius: "100px",
-        marginBottom: "5rem",
-        minHeight: "500px", 
-      }}
-    >
-      
-        {/* IZQUIERDA */}
-        <div className="col-12 col-lg-6 d-flex flex-column gap-4">
-          <span
+    <div className="mt-2 pt-5 overflow-hidden" id="inicio">
+      <div
+        style={{
+          width: "100vw",
+          backgroundImage: `url(${bgHeader})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          paddingBottom: "2rem",
+        }}
+      >
+        <div className="container">
+          <div
+            className="row px-4 py-5 align-items-center"
             style={{
-              color: "#252b42",
-              fontWeight: "700",
-              fontSize: "2.2rem", // más responsivo
-              letterSpacing: "0.1px",
+              backgroundImage: `url(${rectangleBg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              borderTopLeftRadius: "50px",
+              borderBottomRightRadius: "100px",
+              marginBottom: "5rem",
+              minHeight: "500px",
             }}
           >
-            Top Academy
-          </span>
-          <h1 className="fw-bold text-dark display-5 display-md-4">
-            1000+ Estudiantes
-            <br />
-            CONFÍAN EN NOSOTROS.
-          </h1>
-          <h4 className="text-muted fs-6 fs-md-5">
-            Ofrecemos cursos desde primaria, tercer ciclo y bachillerato, hasta cursos técnicos, idiomas, talleres y preparación para admisión universitaria. Una formación integral para tu futuro.
-          </h4>
+            {/* IZQUIERDA */}
+            <div
+              className="col-12 col-lg-6 d-flex flex-column gap-4 mt-4"
+              data-aos="fade-right"
+            >
+              <span
+                style={{
+                  color: "#252b42",
+                  fontWeight: "700",
+                  fontSize: "2.2rem",
+                  letterSpacing: "0.1px",
+                }}
+              >
+                Top Academy
+              </span>
 
-          {/* BOTONES */}
-          <div className="d-flex flex-column flex-sm-row gap-3">
-            <button
-              className="btn btn-primary w-100 px-4 py-2 rounded-3"
-              onClick={handleMatricularClick}
+              <h1 className="display-6 fs-md-2 fs-lg-1 title">
+                <div>3000+ Estudiantes</div>
+                <div className="mt-2">CONFÍAN EN NOSOTROS.</div>
+              </h1>
+
+              <h4 className="text-muted fs-6 fs-md-5">
+                Ofrecemos cursos desde primaria, tercer ciclo y bachillerato,
+                hasta cursos técnicos, idiomas, talleres y preparación para
+                admisión universitaria. Una formación integral para tu futuro.
+              </h4>
+
+              <div className="d-flex flex-column flex-sm-row gap-3">
+                <button
+                  className="btn btn-primary w-100 px-4 py-2 rounded-3"
+                  onClick={handleMatricularClick}
+                >
+                  Empezar Ahora
+                </button>
+
+                <button
+                  className="btn btn-outline-primary w-100 px-4 py-2 rounded-3"
+                  onClick={() =>
+                    document
+                      .getElementById("nosotros")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Más información
+                </button>
+              </div>
+            </div>
+
+            <div
+              className="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center mt-4 mt-lg-0"
+              data-aos="fade-left"
             >
-              Empezar Ahora
-            </button>
-            <button
-              className="btn btn-outline-primary w-100 px-4 py-2 rounded-3"
-              onClick={() =>
-                document
-                  .getElementById("mas-info")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Más información
-            </button>
+              <img
+                src={placeHolderImg}
+                alt="intro"
+                className="img-fluid responsive-img"
+                draggable="false"
+              />
+            </div>
           </div>
-        </div>
-
-        {/* DERECHA */}
-        <div className="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center mt-4 mt-lg-0">
-<img
-  src={placeHolderImg}
-  alt="intro"
-  className="img-fluid responsive-img"
-  draggable="false"
-/>
-
         </div>
       </div>
 
-      {/* SECCIÓN INFERIOR */}
-      <div className="container py-5" id="mas-info">
+      <div className="container py-5 mt-5" id="nosotros" data-aos="fade-up">
         <div className="row g-4">
           <div className="col-12 col-md-4">
             <Card

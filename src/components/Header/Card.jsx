@@ -1,20 +1,21 @@
 export default function Card({ icon, title, description }) {
   return (
-    <div className="card p-4 shadow-sm" style={{ maxWidth: '20rem', borderRadius: '0.5rem' }}>
+    <div className="h-100 shadow rounded-3 text-center p-4" style={{ backgroundColor: "#f8f8f8ff" }}>
       <div
-        className="bg-primary rounded-circle d-flex justify-content-center align-items-center mb-3"
-        style={{ width: '4rem', height: '4rem', padding: '0.75rem' }}
+        className="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center"
+        style={{
+          width: "60px",
+          height: "60px",
+          borderRadius: "50%",
+          backgroundColor: "#007bff1a",
+          color: "#007bff",
+          fontSize: "1.8rem",
+        }}
       >
-        <div className="text-white fs-2 d-flex justify-content-center align-items-center">
-          {icon}
-        </div>
+        {icon}
       </div>
-      <h3 className="text-dark fs-5 fw-bold">{title}</h3>
-      <div
-        className="bg-primary my-3"
-        style={{ width: '3rem', height: '0.125rem' }}
-      ></div>
-      <p className="text-secondary fs-7">{description}</p>
+      <h5>{title}</h5>
+      <p className="text-muted">{description}</p>
     </div>
   );
 }

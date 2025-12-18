@@ -1,46 +1,32 @@
-import Navbar from  "../components/Navbar/Navbar"
-import Header from "../components/Header/Header"
-import Counter from "../components/Counter/Counter"
-import Matters from "../components/Matters/Matters"
-import Experts from "../components/Experts/Experts"
-import Review from "../components/Review/Review"
-import Newsletter from "../components/Newsletter/Newsletter"
-import Footer from "../components/Footer/Footer"
-import Copyright from "../components/Copyright/Copyright"
-import "./App.css"
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import HomePage from "../pages/Home";
+import CoursePage from "../pages/Course";
+import NotFound from "../components/NotFound/NotFound";
+import AOS from "aos";
+import "./App.css";
 
 export default function App() {
-    // Analytics Google
-    // initialize("")
-    // useEffect(()=>{
-    //     pageview(window.location.pathname)
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      easing: "ease-out",
+    });
+  }, []);
 
-    // }, [])
-
-    return (
-        <div className="app">
-            {/* Navbar Section*/}
-            <Navbar />
-            {/* Header Section*/}
-            <Header />
-            {/* Section 0 */}
-            <Counter />
-            {/* Section 1 */}
-            <Matters />
-            {/* Section 2 */}
-            <Experts />
-            {/* Section 3 */}
-
-            {/* Section 5 */}
-            <Newsletter />
-            <Review />
-            {/* Section 4 
-            <Courses />*/}
-
-            {/* Footer Section*/}
-            <Footer />
-            {/* Copyright Section*/}
-            <Copyright />
-        </div>
-    )
+  return (
+    <div className="app">
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/curso/:paramName" element={<CoursePage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </div>
+  );
 }

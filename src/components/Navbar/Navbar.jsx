@@ -7,6 +7,11 @@ import { redirectToWhatsApp } from "../../utils/whatsapp";
 
 export default function Navbar() {
 
+const goToSection = (section) => {
+  window.location.href = `/#${section}`;
+};
+
+
   const handleMatricularClick = () => {
     redirectToWhatsApp({
       phone: "50687884669",
@@ -45,20 +50,68 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-3">
             <li className="nav-item">
-              <a className="nav-link" href="#inicio">Inicio</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#nosotros">Nosotros</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#cursos">Cursos</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contacto">Contacto</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#info">Info</a>
-            </li>
+  <button
+    className="nav-link bg-transparent border-0"
+    onClick={() => goToSection("inicio")}
+  >
+    Inicio
+  </button>
+</li>
+
+<li className="nav-item">
+  <button
+    className="nav-link bg-transparent border-0"
+    onClick={() => goToSection("nosotros")}
+  >
+    Nosotros
+  </button>
+</li>
+
+<li className="nav-item">
+  <button
+    className="nav-link bg-transparent border-0"
+    onClick={() => goToSection("cursos")}
+  >
+    Cursos
+  </button>
+</li>
+
+<li className="nav-item">
+  <button
+    className="nav-link bg-transparent border-0"
+    onClick={() => goToSection("contacto")}
+  >
+    Contacto
+  </button>
+</li>
+
+<li className="nav-item">
+  <button
+    className="nav-link bg-transparent border-0"
+    onClick={() => goToSection("testimonios")}
+  >
+    Testimonios
+  </button>
+</li>
+
+<li className="nav-item">
+  <button
+    className="nav-link bg-transparent border-0"
+    onClick={() => goToSection("ubicacion")}
+  >
+    Ubicación
+  </button>
+</li>
+
+<li className="nav-item">
+  <button
+    className="nav-link bg-transparent border-0"
+    onClick={() => goToSection("info")}
+  >
+    Info
+  </button>
+</li>
+
           </ul>
 
           {/* Botón Matricular */}

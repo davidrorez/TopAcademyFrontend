@@ -3,10 +3,10 @@ import Metrics from "./Metrics";
 
 export default function Counter() {
   return (
-    <div className="container py-5">
+    <div className="container py-5" id="counter" data-aos="fade-up">
       <div className="row gy-4 justify-content-center">
         <div className="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-          <Metrics value={"1,000+"} title={"Estudiantes Graduados"} />
+          <Metrics value={"2,000+"} title={"Estudiantes Graduados"} />
         </div>
         <div className="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
           <Metrics value={"95%"} title={"Tasa de Aprobación"} />
