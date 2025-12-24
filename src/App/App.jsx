@@ -6,6 +6,7 @@ import HomePage from "../pages/Home";
 import CoursePage from "../pages/Course";
 import NotFound from "../components/NotFound/NotFound";
 import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.css";
 
 export default function App() {
@@ -13,20 +14,23 @@ export default function App() {
     AOS.init({
       duration: 600,
       easing: "ease-out",
+      once: true,
     });
   }, []);
 
   return (
-    <div className="app">
-      <Navbar />
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="app">
+        <Navbar />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/curso/:paramName" element={<CoursePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
-      <Footer />
-    </div>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }

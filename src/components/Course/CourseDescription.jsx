@@ -10,22 +10,22 @@ export default function CourseDescription() {
   const beneficios = [
     {
       title: "Aprendizaje Estructurado",
-      text: "Contenido organizado para avanzar de manera clara y progresiva.",
+      text: "Clases diseñadas paso a paso para personas adultas que necesitan claridad, no confusión.",
       icon: <FaTools size={32} color="#00A6FF" />,
     },
     {
       title: "Modalidad Flexible",
-      text: "Estudia desde cualquier lugar en modalidad presencial o virtual.",
+      text: "Estudia desde casa, ajustando tus horarios sin descuidar tu trabajo o familia.",
       icon: <FaLaptop size={32} color="#00A6FF" />,
     },
     {
       title: "Acceso Ilimitado",
-      text: "Consulta el material y las lecciones siempre que lo necesites.",
+      text: "Repite las clases y consulta el material todas las veces que lo necesites.",
       icon: <FaClock size={32} color="#00A6FF" />,
     },
     {
       title: "Certificación Incluida",
-      text: "Obtén una certificación al finalizar el curso y validar tus conocimientos.",
+      text: "Completa tu preparación y avanza con respaldo académico.",
       icon: <FaCertificate size={32} color="#00A6FF" />,
     },
   ];
@@ -36,18 +36,20 @@ export default function CourseDescription() {
         <SectionHeader
           subtitle={course.category}
           title={course.title}
-          paragraph="Explora nuestros programas educativos diseñados para ayudarte a alcanzar el éxito académico."
+          paragraph={course.paragraph}
         />
       </div>
       <div className="container mb-5">
         <div className="row justify-content-center">
           <div>
-            <div className="p-4 shadow-sm rounded-3" data-aos="fade-up" style={{ backgroundColor: "#f8f8f8ff" }}>
+            <div
+              className="p-4 shadow-sm rounded-3"
+              data-aos="fade-up"
+              style={{ backgroundColor: "#f8f8f8ff" }}
+            >
               <h4 className="mb-3" style={{ color: "#001B55" }}>
                 ¿Qué aprenderás en este curso?
               </h4>
-
-              {/* Texto principal */}
               <p className="text-muted" style={{ lineHeight: "1.7" }}>
                 {course.fullDescription}
               </p>
@@ -60,30 +62,16 @@ export default function CourseDescription() {
                 }}
               >
                 <strong style={{ color: "#001B55" }}>Nota importante:</strong>
-                <p className="mb-0 text-muted">
-                  Nuestro programa está diseñado para adaptarse a diferentes
-                  niveles, por lo que podrás avanzar a tu propio ritmo y
-                  reforzar lo que necesites.
-                </p>
+                <p className="mb-0 text-muted">{course.note}</p>
               </div>
 
-              {/* Lista de puntos clave */}
               <h5 className="mb-3" style={{ color: "#001B55" }}>
                 Este curso te permitirá:
               </h5>
               <ul className="text-muted" style={{ lineHeight: "1.8" }}>
-                <li>
-                  Comprender los temas clave de forma clara y estructurada.
-                </li>
-                <li>
-                  Acceder a recursos actualizados y materiales exclusivos.
-                </li>
-                <li>
-                  Recibir acompañamiento académico durante tu aprendizaje.
-                </li>
-                <li>
-                  Prepararte para evaluaciones y certificaciones oficiales.
-                </li>
+                {course.benefits.map((benefit, index) => (
+                  <li key={index}>{benefit}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -94,7 +82,10 @@ export default function CourseDescription() {
         <div className="row g-4">
           {beneficios.map((b, i) => (
             <div key={i} className="col-md-6 d-flex">
-              <div className="p-4 shadow-sm rounded-3 d-flex align-items-start h-100 w-100" style={{ backgroundColor: "#f8f8f8ff" }}>
+              <div
+                className="p-4 shadow-sm rounded-3 d-flex align-items-start h-100 w-100"
+                style={{ backgroundColor: "#f8f8f8ff" }}
+              >
                 <div
                   className="rounded-circle d-flex align-items-center justify-content-center me-3"
                   style={{
@@ -109,7 +100,6 @@ export default function CourseDescription() {
                   {b.icon}
                 </div>
 
-                {/* TEXTO */}
                 <div className="d-flex flex-column">
                   <h5 className="fw-bold mb-1" style={{ color: "#001B55" }}>
                     {b.title}
